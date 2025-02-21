@@ -1,0 +1,17 @@
+#desktop-nav {
+    display: flex; /* Ensure desktop nav is always visible by default */
+}
+
+#hamburger-nav {
+    display: none; /* Hide hamburger nav by default */
+}
+
+@media screen and (max-width: 1200px){
+    #desktop-nav{
+        display: none;
+    }
+
+    #hamburger-nav{
+        display: flex;
+    }
+}

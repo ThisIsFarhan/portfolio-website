@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Farhan Ali Khan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Farhan Ali Khan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#skills" onclick="togglemenu()">Skills</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="farhan's profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hey there! I'm</p>
+            <h1 class="title">Farhan</h1>
+            <p class="section__text__p2">Agentic AI / ML / NLP / Flutter</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Farhan_Resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/farhan-ak128'">
+                <img src="./assets/github.png" alt="My github" class="icon" onclick="location.href='https://github.com/ThisIsFarhan'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <!-- <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/graduation.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <div class="education-entry">
+                            <img src="./assets/gcu.jpeg" alt="GCU Logo" class="edu-logo">
+                            <p>Intermediate in Computer Science <br> Government College University, Lahore</p>
+                        </div>
+                        <div class="education-entry">
+                            <img src="./assets/cui.png" alt="COMSATS Logo" class="edu-logo">
+                            <p>B.Sc. Computer Engineering <br> COMSATS University Islamabad, Lahore</p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="text-container">
+                        <p>Welcome to my portfolio! I am an 8th-semester Computer Engineering student with a strong focus on <strong>Natural Language Processing (NLP)</strong> and AI-driven applications. My Final Year Project, <strong>OptiPros</strong>, is a blind assistance device designed to help visually impaired individuals navigate their surroundings. It runs a <strong>Large Language Model (LLM)</strong> locally on a constrained <strong>Raspberry Pi 4</strong>, ensuring real-time processing without relying on cloud services.</p>  
+                        <br>
+                        <p>Beyond academics, I am passionate about <strong>Agentic AI</strong> and developing autonomous AI systems that adapt to real-world scenarios. I am also exploring <strong>AWS Cloud</strong> for deploying scalable AI solutions. Additionally, I work on <strong>Flutter development</strong>, creating AI-powered mobile applications that integrate machine learning models for intelligent user experiences. My portfolio highlights my expertise in <strong>NLP, embedded AI, cloud computing, and AI app development</strong>.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Tech Stack</h1>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

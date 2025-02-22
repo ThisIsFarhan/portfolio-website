@@ -45,7 +45,8 @@
             <h1 class="title">Farhan</h1>
             <p class="section__text__p2">Agentic AI / ML / NLP / Flutter</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Farhan_Resume.pdf')">Download CV</button>
+                <!-- <button class="btn btn-color-2" onclick="window.open('./assets/Farhan_Resume.pdf')">Download CV</button> -->
+                <button class="btn btn-color-2" onclick="location.href='./#projects'">My Projects</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
             </div>
             <div id="socials-container">
@@ -59,7 +60,7 @@
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="about-details-container">
-                <!-- <div class="about-containers">
+                <div class="about-containers">
                     <div class="details-container">
                         <img src="./assets/graduation.png" alt="Education Icon" class="icon">
                         <h3>Education</h3>
@@ -72,7 +73,7 @@
                             <p>B.Sc. Computer Engineering <br> COMSATS University Islamabad, Lahore</p>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div class="text-container">
                         <p>Welcome to my portfolio! I am an 8th-semester Computer Engineering student with a strong focus on <strong>Natural Language Processing (NLP)</strong> and AI-driven applications. My Final Year Project, <strong>OptiPros</strong>, is a blind assistance device designed to help visually impaired individuals navigate their surroundings. It runs a <strong>Large Language Model (LLM)</strong> locally on a constrained <strong>Raspberry Pi 4</strong>, ensuring real-time processing without relying on cloud services.</p>  
                         <br>
@@ -82,10 +83,156 @@
         </div>
         <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#skills'">
     </section>
+    
+    
     <section id="skills">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Tech Stack</h1>
+        <div class="skills-details-container">
+            <div class="article-container">
+                <article>
+                    <img src="./assets/python.jpeg" alt="Python">
+                    <h3>Python</h3>
+                </article>
+                <article>
+                    <img src="./assets/pytorch.png" alt="Pytorch">
+                    <h3>Pytorch</h3>
+                </article>
+                <article>
+                    <img src="./assets/tensorflow.png" alt="Tensorflow">
+                    <h3>Tensorflow</h3>
+                </article>
+                <article>
+                    <img src="./assets/fastapi.png" alt="FastAPI">
+                    <h3>FastAPI</h3>
+                </article>
+                <article>
+                    <img src="./assets/docker.png" alt="Docker">
+                    <h3>Docker</h3>
+                </article>
+                <article>
+                    <img src="./assets/langchain.png" alt="Langchain">
+                    <h3>Langchain</h3>
+                </article>
+                <article>
+                    <img src="./assets/ollama.png" alt="Ollama">
+                    <h3>Ollama</h3>
+                </article>
+                <article>
+                    <img src="./assets/aws.png" alt="AWS">
+                    <h3>AWS</h3>
+                </article>
+                <article>
+                    <img src="./assets/flutter.png" alt="Flutter">
+                    <h3>Flutter</h3>
+                </article>
+                <article>
+                    <img src="./assets/dart.png" alt="Dart">
+                    <h3>Dart</h3>
+                </article>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+            <button id="prev-btn">&#9664;</button> <!-- Left arrow -->
+            
+            <div class="project-card-container">
+                <div class="project-card">
+                    <img src="./projects/gdscratch.PNG" alt="Project 1">
+                    <h3>Gradient Descent From Scratch</h3>
+                    <p>In this project, I have explained the rudiments of gradient descent algorithms for optimizing the cost function for ML/DL applications</p>
+                    <div class="project-links">
+                        <a href="https://medium.com/@farhanalikhan_30479/optimization-101-gradient-descent-from-scratch-52d97950700f">Medium</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./projects/rag.jpeg" alt="Project 1">
+                    <h3>Agentic RAG</h3>
+                    <p>Developed a simple Agentic RAG application using LangGraph with Web-search capabilities using Tavili API</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ThisIsFarhan/AgenticRag-LangGraph">GitHub</a>
+                    </div>
+                </div>
+                
+    
+                <div class="project-card">
+                    <img src="./projects/newssummarizer.png" alt="Project 2">
+                    <h3>Extractive Text Summarizer From Scratch</h3>
+                    <p>
+                        An Extractive Text Summarization algorithm was implemented from scratch using NLP techniques. News articles are summarized by extracting key sentences that represent the main points of the text. This project demonstrates the application of NLP for text summarization and provides insights into the process of building such algorithms from the ground up.
+                        <br>
+                        checkout the links for more details.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://www.linkedin.com/pulse/revolutionizing-news-consumption-how-nlp-powered-have-farhan-ali-khan-w6kqf/">Article</a>
+                        <a href="https://github.com/ThisIsFarhan/NEWS-SUMMARIZER">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./projects/mcqgeneration.PNG" alt="Project 3">
+                    <h3>MCQ generation algorithm from scratch</h3>
+                    <p>
+                        In this project, I developed an algorithm from scratch to automatically generate multiple-choice questions from text utlizing different techniques like TF-IDF to find the similarity and extract important information. This project showcases my skills in natural language processing.
+                        <br>
+                        checkout the links for more details.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://www.linkedin.com/pulse/from-text-test-automated-mcq-generation-using-nlp-farhan-ali-khan-siuef/">Article</a>
+                        <a href="https://github.com/ThisIsFarhan/MCQGENERATOR-NLP">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./projects/leafylenz.PNG" alt="Project 4">
+                    <h3>LeafyLenz</h3>
+                    <p>
+                        LeafyLenz is an AI powered application developed using Flutter. It helps plants enthusiast to easily identify plants species and get the take-care guides.
+                        <br>
+                        Check out the project section on my LinkedIn for more details.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://www.linkedin.com/in/farhan-ak128">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <button id="next-btn">&#9654;</button> <!-- Right arrow -->
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:farhanak128@gmail.com">farhanak128@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/farhan-ak128">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Farhan Ali Khan. All Rights Reserved</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

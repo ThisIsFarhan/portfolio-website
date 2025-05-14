@@ -1,0 +1,39 @@
+{
+  "certifications": [
+    {
+      "title": "Machine Learning Specialization",
+      "platform": "Coursera",
+      "issuer": "DeepLearning.AI & Stanford University",
+      "date": "2024",
+      "link": "https://coursera.org/share/356515d961d94c3d09fb65c559c68ce0"
+    },
+    {
+      "title": "Introduction to LangGraph",
+      "platform": "LangChain Academy",
+      "issuer": "LangChain",
+      "date": "2025",
+      "link": "https://academy.langchain.com/certificates/nveqf9hf0u"
+    },
+    {
+      "title": "Data Science and Machine Learning",
+      "platform": "LUMS",
+      "issuer": "CES",
+      "date": "2022",
+      "link": "./certificates/DS-ML.pdf"
+    },
+    {
+      "title": "British Airways - Data Science Job Simulation",
+      "platform": "British Airways",
+      "issuer": "Forage",
+      "date": "2024",
+      "link": "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/British%20Airways/NjynCWzGSaWXQCxSX_British%20Airways_uP8ua3pRjMfQSuwFE_1723559835275_completion_certificate.pdf"
+    },
+    {
+      "title": "Web Development",
+      "platform": "LUMS",
+      "issuer": "CES",
+      "date": "2022",
+      "link": "./certificates/WebDev.pdf"
+    }
+  ]
+}

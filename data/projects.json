@@ -1,0 +1,56 @@
+{
+  "categories": [
+    {
+      "name": "Machine Learning",
+      "projects": [
+        {
+          "title": "K-Nearest Neighbors on FPGA",
+          "description": "Implemented KNN algorithm on FPGA using VHDL.",
+          "image": "./projects/knn-fpga.jpeg",
+          "links": {
+            "Hashnode": "https://hardware-ai.hashnode.dev/k-nearest-neighbors-on-fpga-leveraging-hardware-technology"
+          }
+        },
+        {
+          "title": "Extractive Text Summarizer From Scratch",
+          "description": "An Extractive Text Summarization algorithm implemented from scratch using NLP techniques. News articles are summarized by extracting key sentences that represent the main points of the text.",
+          "image": "./projects/newssummarizer.png",
+          "links": {
+            "article": "https://www.linkedin.com/pulse/revolutionizing-news-consumption-how-nlp-powered-have-farhan-ali-khan-w6kqf/",
+            "github": "https://github.com/ThisIsFarhan/NEWS-SUMMARIZER",
+            "demo": "https://news-summarizer-farhan.streamlit.app/"
+          }
+        },
+        {
+          "title": "MCQ Generation Algorithm From Scratch",
+          "description": "Developed an algorithm from scratch to automatically generate multiple-choice questions from text utilizing different techniques like TF-IDF to find similarity and extract important information.",
+          "image": "./projects/mcqgeneration.PNG",
+          "links": {
+            "article": "https://www.linkedin.com/pulse/from-text-test-automated-mcq-generation-using-nlp-farhan-ali-khan-siuef/",
+            "github": "https://github.com/ThisIsFarhan/MCQGENERATOR-NLP",
+            "demo": "http://mcqgenerator-nlp-farhan.streamlit.app/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "AI",
+      "projects": [
+        {
+          "title": "LangGraph RAG Worfkflow",
+          "description": "Developed a simple Agentic RAG application using LangGraph with Web-search capabilities using Tavili API",
+          "image": "./projects/rag.jpeg",
+          "links":{"github": "https://github.com/ThisIsFarhan/AgenticRag-LangGraph"}
+        },
+        {
+          "title": "Document Sorter Using BERTopic",
+          "description": " developed a document sorting application using BERTopic to automatically organize research papers into meaningful categories based on abstracts.",
+          "image": "./projects/doc-sorter.jpeg",
+          "links": {
+            "github": "https://github.com/ThisIsFarhan/DocumentSorter-BERTopic"
+          }
+        }
+      ]
+    }
+  ]
+}

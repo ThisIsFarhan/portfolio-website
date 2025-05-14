@@ -1,7 +1,5 @@
 /* General */
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 *{
     margin: 0;
@@ -285,24 +283,13 @@ section {
     display: flex;
 }
 
-
-
-/* .details-container{
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
-} */
 .text-container {
     align-items: center;
     text-align: left;
     font-size: 1.1rem;
     color: #333;
     line-height: 1.8;
-    background-color: #f9f9f9; /* Light background */
+    background-color: #f9f9f9;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -315,58 +302,50 @@ section {
 
 .details-container {
     flex: 1;
-    /* background: linear-gradient(to right, #f0f0f0 0%, #ffffff 50%, #ffffff 60%, #f0f0f0 100%);    border-radius: 1rem; */
-    background: white; border-radius: 1rem;
+    background: white;
+    border-radius: 1rem;
     border: none;
     text-align: center;
     padding: 2rem;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers content */
+    align-items: center;
 }
 
 .education-entry {
     display: flex;
     align-items: center;
-    gap: 1rem; /* Space between logo and text */
+    gap: 1rem;
     margin-top: 1rem;
-    justify-content: center; /* Keeps text aligned properly */
+    justify-content: center;
     text-align: left;
-    width: 100%; /* Ensures alignment */
+    width: 100%;
 }
 
 .edu-logo {
-    width: 70px; /* Adjust logo size */
+    width: 70px;
     height: auto;
     border-radius: 5px;
-    background: transparent; /* Ensures no background color */
+    background: transparent;
 }
 
 .arrow{
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
-    /* right: -5rem;
-    bottom: -10rem; */
 }
-
-
 
 .section-container {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Space between elements */
-    padding: 40px 20px; /* Adjust padding */
+    gap: 20px;
+    padding: 40px 20px;
 }
 
-
-
 /* skills */
-/* skills */
-/* Center the entire section */
 #skills {
     position: relative;
     display: flex;
@@ -375,13 +354,12 @@ section {
     align-items: center;
     text-align: center;
     min-height: 100vh;
-    padding: 20px; /* Prevents content from sticking to edges */
+    padding: 20px;
 }
 
-/* Outer box (adaptive width) */
 .skills-details-container {
     width: 70%;
-    max-width: 800px; /* Ensures it doesn't stretch too much */
+    max-width: 800px;
     padding: 2rem;
     border: 3px solid #333;
     border-radius: 10px;
@@ -392,56 +370,51 @@ section {
     align-items: center;
 }
 
-/* Grid layout: two equal columns on large screens */
 .article-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px 100px; /* Adjusted spacing for better layout */
+    gap: 15px 100px;
     padding: 20px;
 }
 
-/* Individual article (icon + text) */
 article {
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: flex-start;
-    text-align: left; /* Ensures text stays aligned */
+    text-align: left;
 }
 
-/* Icon styling */
 article img {
     width: 50px;
     height: 50px;
     object-fit: contain;
 }
 
-/* Text styling */
 article h3 {
     font-size: 1.2rem;
     color: #333;
     margin: 0;
 }
 
-/* 🔹 Responsive adjustments for smaller screens */
 @media screen and (max-width: 768px) {
     .skills-details-container {
-        width: 90%; /* More adaptive width */
+        width: 90%;
         padding: 1.5rem;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Ensures center alignment */
+        align-items: center;
     }
 
     .article-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-        gap: 15px; /* Even spacing */
-        justify-items: center; /* Aligns items within their grid cells */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
     }
 
     article {
-        width: 100%; /* Takes full width of grid cell */
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -458,150 +431,157 @@ article h3 {
     }
 }
 
-/* 🔹 Further adjustments for very small screens */
 @media screen and (max-width: 480px) {
     .article-container {
-        flex-direction: column; /* Stack skills in one column */
+        flex-direction: column;
         gap: 10px;
     }
 
     article {
-        width: 100%; /* Full width */
+        width: 100%;
         justify-content: center;
     }
 }
 
-/* project section */
-#projects{
-    position: relative;
-}
-
-.projects-container {
+/* Projects Section Styles */
+.project-categories {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: nowrap; /* Prevents wrapping of arrows */
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
-.project-card-container {
-    width: 70%;
-    height: 45%;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center; /* Centers the project cards */
+.category-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid #333;
+    border-radius: 2rem;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.category-btn.active {
+    background: #333;
+    color: white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
 }
 
 .project-card {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
     background: white;
-    border: 3px solid black;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.3s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.project-card.active {
-    display: flex;
-    opacity: 1;
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
 .project-card img {
-    width: 100%; /* Makes the image responsive */
-    max-width: 400px; /* Limits the maximum size */
-    height: auto; /* Maintains aspect ratio */
-    margin-bottom: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .projects-container {
-        flex-direction: row; /* Keeps arrows on the sides */
-        align-items: center; /* Aligns items properly */
-        justify-content: space-between; /* Maintains proper spacing */
-    }
-
-    .project-card-container {
-        width: 90%; /* Adjusts width for smaller screens */
-    }
-
-    .project-card {
-        padding: 15px; /* Adjust padding */
-    }
-
-    .project-card img {
-        max-width: 300px; /* Adjust image size on smaller screens */
-    }
-
-    #prev-btn, #next-btn {
-        font-size: 20px; /* Adjust arrow size */
-    }
+.project-card h3 {
+    padding: 1rem;
+    margin: 0;
 }
 
-@media screen and (max-width: 480px) {
-    .projects-container {
-        gap: 5px; /* Reduce gap for smaller screens */
-    }
-
-    .project-card-container {
-        width: 100%;
-    }
-
-    .project-card img {
-        max-width: 250px; /* Further reduce image size for small screens */
-    }
-
-    .project-card {
-        padding: 10px;
-    }
-
-    .project-links a {
-        font-size: 12px;
-        padding: 4px 8px;
-    }
-
-    #prev-btn, #next-btn {
-        font-size: 18px; /* Smaller arrow buttons */
-    }
+.project-card p {
+    padding: 0 1rem;
+    flex-grow: 1;
 }
 
 .project-links {
-    margin-top: 10px;
-}
-
-.project-links a {
-    text-decoration: none;
-    color: white;
-    background: black;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-.project-links a:hover {
-    background: gray;
-}
-
-/* Left & Right Buttons */
-#prev-btn, #next-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
+    padding: 1rem;
     display: flex;
-    align-items: center;
+    gap: 1rem;
     justify-content: center;
 }
 
+/* Certifications Section Styles */
+#certifications {
+    padding: 4rem 2rem;
+}
 
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
 
+.certification-card {
+    background: white;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+}
+
+.cert-issuer {
+    font-weight: 600;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.cert-platform {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.cert-date {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.cert-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: white;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cert-link:hover {
+    background: #555;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .projects-grid,
+    .certifications-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .category-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
 
 /* contact section */
 #contact{
@@ -642,8 +622,6 @@ article h3 {
     height: 2.5rem;
 }
 
-
-
 /* footer */
 footer{
     height: 26vh;
@@ -652,13 +630,4 @@ footer{
 
 footer p {
     text-align: center;
-    ;
 }
-
-
-
-
-
-
-
-

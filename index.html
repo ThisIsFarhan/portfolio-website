@@ -45,7 +45,7 @@
         <div class="section__text">
             <p class="section__text__p1">Hey there! I'm</p>
             <h1 class="title">Farhan</h1>
-            <p class="section__text__p2">Agentic AI / ML / NLP / Flutter</p>
+            <p class="section__text__p2">Machine Learning | Generative AI | Backend</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="location.href='./#projects'">My Projects</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
@@ -59,33 +59,71 @@
     <section id="about">
         <p class="section__text__p1">Get to know more</p>
         <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/graduation.png" alt="Education Icon" class="icon">
-                        <h3>Education</h3>
-                        <div class="education-entry">
-                            <img src="./assets/gcu.jpeg" alt="GCU Logo" class="edu-logo">
-                            <p>Intermediate in Computer Science <br> Government College University, Lahore</p>
+
+        <div class="about-hero">
+            <div class="about-intro-card">
+                <div class="intro-header">
+                    <div class="intro-icon">👋</div>
+                    <!-- <h3>Hello, I'm Farhan!</h3> -->
+                </div>
+                <div class="intro-content">
+                    <p>I'm a passionate <strong>Computer Engineering student</strong> specializing in <strong>Machine Learning</strong>, <strong>Generative AI</strong>, and <strong>Backend Engineering</strong>.</p>
+
+                    <div class="expertise-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🤖</span>
+                            <span>AI & Machine Learning</span>
                         </div>
-                        <div class="education-entry">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">⚡</span>
+                            <span>PyTorch & LLM Fine-tuning</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🔧</span>
+                            <span>Backend & DevOps</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">☁️</span>
+                            <span>Cloud Computing (AWS)</span>
+                        </div>
+                    </div>
+
+                    <p class="intro-description">
+                        My flagship project, <strong>OptiPros</strong>, demonstrates my expertise in embedded AI - running Large Language Models locally on Raspberry Pi 4 for real-time blind assistance. I'm passionate about creating AI solutions that make a real-world impact.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-education-card">
+                <div class="education-header">
+                    <img src="./assets/graduation.png" alt="Education Icon" class="education-main-icon">
+                    <h3>Educational Journey</h3>
+                </div>
+                <div class="education-timeline">
+                    <div class="education-item">
+                        <div class="education-year">2019-2021</div>
+                        <div class="education-details">
+                            <img src="./assets/gcu.jpeg" alt="GCU Logo" class="edu-logo">
+                            <div class="education-info">
+                                <h4>Intermediate in Computer Science</h4>
+                                <p>Government College University, Lahore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-year">2021-2025</div>
+                        <div class="education-details">
                             <img src="./assets/cui.png" alt="COMSATS Logo" class="edu-logo">
-                            <p>B.Sc. Computer Engineering <br> COMSATS University Islamabad, Lahore</p>
+                            <div class="education-info">
+                                <h4>B.Sc. Computer Engineering</h4>
+                                <p>COMSATS University Islamabad, Lahore</p>
+                                <!-- <span class="current-badge">Current</span> -->
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="text-container">
-                    <p>Welcome to my portfolio! I am an 8th-semester Computer Engineering student with a strong focus on <strong>Natural Language Processing (NLP)</strong> and AI-driven applications. My Final Year Project, <strong>OptiPros</strong>, is a blind assistance device designed to help visually impaired individuals navigate their surroundings. It runs a <strong>Large Language Model (LLM)</strong> locally on a constrained <strong>Raspberry Pi 4</strong>, ensuring real-time processing without relying on cloud services.</p>  
-                    <br>
-                    <p>Beyond academics, I am passionate about <strong>Agentic AI</strong> and developing autonomous AI systems that adapt to real-world scenarios. I am also exploring <strong>AWS Cloud</strong> for deploying scalable AI solutions. Additionally, I work on <strong>Flutter development</strong>, creating AI-powered mobile applications that integrate machine learning models for intelligent user experiences. My portfolio highlights my expertise in <strong>NLP, embedded AI, cloud computing, and AI app development</strong>.</p>
-                </div> -->
-                <div class="text-container">
-                    <p><strong>Welcome! I'm a final-year Computer Engineering student with a focus on Agentic AI and Full-Stack Development</strong></p>
-                </div>
             </div>
         </div>
-        <!-- <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#skills'"> -->
     </section>
     
     <section id="skills">
@@ -137,6 +175,150 @@
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
+
+        <!-- OptiPros Detailed Card -->
+        <div class="fyp-card-container">
+            <div class="fyp-featured-badge">🏆 Featured Final Year Project</div>
+            <div class="fyp-card" id="optipros-card">
+                <div class="fyp-card-header" onclick="toggleOptiProsCard()">
+                    <div class="fyp-header-content">
+                        <h2>OptiPros - AI-Powered Blind Assistance Device</h2>
+                        <p class="fyp-subtitle">Final Year Project | NLP & Computer Vision</p>
+                        <p class="fyp-tagline">Local LLM on Raspberry Pi 4 for real-time navigation assistance</p>
+                    </div>
+                    <div class="fyp-expand-icon" id="optipros-icon">
+                        <span>▼</span>
+                    </div>
+                </div>
+
+                <div class="fyp-card-content" id="optipros-content">
+                    <!-- OptiPros Demo Video -->
+                    <div class="fyp-video-container">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata" poster="">
+                                <source src="./projects/final_demo.mp4" type="video/mp4">
+                                <div class="video-fallback">
+                                    <div class="placeholder-content">
+                                        <h3>OptiPros - AI-Powered Blind Assistance Device</h3>
+                                        <p>Your browser doesn't support video playback</p>
+                                        <p>Please download the video to view: <a href="./projects/final_demo.mp4" download>Download Demo</a></p>
+                                    </div>
+                                </div>
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="fyp-content-grid">
+                        <div class="fyp-section">
+                            <h4>Problem Statement</h4>
+                            <p>Developing an intelligent assistance device for visually impaired individuals that provides real-time navigation guidance without relying on cloud connectivity, ensuring privacy and consistent performance.</p>
+                        </div>
+
+                        <div class="fyp-section">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Local LLM processing (no cloud dependency)</li>
+                                <li>Real-time object detection and navigation</li>
+                                <li>Voice-based interaction system</li>
+                                <li>Optimized for resource-constrained hardware</li>
+                            </ul>
+                        </div>
+
+                        <div class="fyp-section">
+                            <h4>Technical Stack</h4>
+                            <p>Raspberry Pi 4, Python, TensorFlow Lite, Custom LLM optimization, Computer Vision, Natural Language Processing</p>
+                        </div>
+
+                        <div class="fyp-section">
+                            <h4>Impact</h4>
+                            <p>Empowers visually impaired individuals with independent navigation capabilities, providing real-time environmental awareness and obstacle detection for safer mobility.</p>
+                        </div>
+
+                        <!-- <div class="fyp-links">
+                            <button class="fyp-btn fyp-btn-primary">View Demo</button>
+                            <button class="fyp-btn fyp-btn-secondary">GitHub Repository</button>
+                            <button class="fyp-btn fyp-btn-secondary">Technical Paper</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <!-- MedLipReader Project Card -->
+        <div class="medlip-card-container">
+            <div class="medlip-featured-badge">🏥 Healthcare AI Project</div>
+            <div class="medlip-card" id="medlip-card">
+                <div class="medlip-card-header" onclick="toggleMedLipCard()">
+                    <div class="medlip-header-content">
+                        <h2>MedLipReader - AI for Accessible Healthcare</h2>
+                        <p class="medlip-subtitle">Healthcare AI | Deep Learning & Computer Vision</p>
+                        <p class="medlip-tagline">Reading mouth movements from video to determine speech without audio</p>
+                    </div>
+                    <div class="medlip-expand-icon" id="medlip-icon">
+                        <span>▼</span>
+                    </div>
+                </div>
+
+                <div class="medlip-card-content" id="medlip-content">
+                    <!-- MedLipReader Demo Video -->
+                    <div class="medlip-video-container">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata" poster="">
+                                <source src="./projects/demo-lipnet.mp4" type="video/mp4">
+                                <div class="video-fallback">
+                                    <div class="placeholder-content">
+                                        <h3>MedLipReader - Healthcare AI Demo</h3>
+                                        <p>Your browser doesn't support video playback</p>
+                                        <p>Please download the video to view: <a href="./projects/medlip_demo.mp4" download>Download Demo</a></p>
+                                    </div>
+                                </div>
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="medlip-content-grid">
+                        <div class="medlip-section">
+                            <h4>Healthcare Challenge</h4>
+                            <p>Communication barriers between healthcare providers and patients with hearing impairments create significant obstacles in medical care, potentially compromising diagnosis accuracy and treatment outcomes.</p>
+                        </div>
+
+                        <div class="medlip-section">
+                            <h4>AI Solution</h4>
+                            <ul>
+                                <li>Deep Learning-powered lip reading technology</li>
+                                <li>Computer Vision for mouth movement analysis</li>
+                                <li>Real-time speech recognition without audio</li>
+                                <li>Healthcare-optimized accessibility interface</li>
+                            </ul>
+                        </div>
+
+                        <div class="medlip-section">
+                            <h4>Technical Innovation</h4>
+                            <p>Advanced neural networks process video frames to extract lip movement patterns, converting visual speech cues into text through sophisticated computer vision algorithms and deep learning models.</p>
+                        </div>
+
+                        <div class="medlip-section">
+                            <h4>Healthcare Impact</h4>
+                            <p>Empowers healthcare professionals to communicate effectively with hearing-impaired patients, ensuring barrier-free communication.</p>
+                        </div>
+
+                        <!-- <div class="medlip-links">
+                            <button class="medlip-btn medlip-btn-primary">View Demo</button>
+                            <button class="medlip-btn medlip-btn-secondary">GitHub Repository</button>
+                            <button class="medlip-btn medlip-btn-secondary">Research Paper</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visual Separator -->
+        <div class="fyp-separator">
+            <div class="separator-line"></div>
+            <div class="separator-text">Other Projects</div>
+            <div class="separator-line"></div>
+        </div>
+
         <div id="project-categories" class="project-categories"></div>
         <div id="projects-grid" class="projects-grid"></div>
         <!-- <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#certifications'"> -->
@@ -165,18 +347,18 @@
     </section>
     
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
+        <div class="footer-card">
+            <nav>
+                <ul class="footer-nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2025 Farhan Ali Khan. All Rights Reserved</p>
+            </nav>
+            <p>Copyright &#169; 2025 Farhan Ali Khan. All Rights Reserved</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>

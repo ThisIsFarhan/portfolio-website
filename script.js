@@ -5,6 +5,88 @@ function togglemenu(){
     icon.classList.toggle('open');
 }
 
+// OptiPros Card Toggle Functionality
+function toggleOptiProsCard() {
+    const content = document.getElementById('optipros-content');
+    const icon = document.getElementById('optipros-icon');
+    const card = document.getElementById('optipros-card');
+
+    // Toggle expanded state
+    const isExpanded = content.classList.contains('expanded');
+
+    if (isExpanded) {
+        // Collapse
+        content.classList.remove('expanded');
+        icon.classList.remove('expanded');
+        card.setAttribute('aria-expanded', 'false');
+    } else {
+        // Expand
+        content.classList.add('expanded');
+        icon.classList.add('expanded');
+        card.setAttribute('aria-expanded', 'true');
+    }
+}
+
+// MedLipReader Card Toggle Functionality
+function toggleMedLipCard() {
+    const content = document.getElementById('medlip-content');
+    const icon = document.getElementById('medlip-icon');
+    const card = document.getElementById('medlip-card');
+
+    // Toggle expanded state
+    const isExpanded = content.classList.contains('expanded');
+
+    if (isExpanded) {
+        // Collapse
+        content.classList.remove('expanded');
+        icon.classList.remove('expanded');
+        card.setAttribute('aria-expanded', 'false');
+    } else {
+        // Expand
+        content.classList.add('expanded');
+        icon.classList.add('expanded');
+        card.setAttribute('aria-expanded', 'true');
+    }
+}
+
+// Add keyboard accessibility for OptiPros card
+function initializeOptiProsAccessibility() {
+    const cardHeader = document.querySelector('.fyp-card-header');
+    if (cardHeader) {
+        // Add keyboard support
+        cardHeader.setAttribute('tabindex', '0');
+        cardHeader.setAttribute('role', 'button');
+        cardHeader.setAttribute('aria-expanded', 'false');
+        cardHeader.setAttribute('aria-label', 'Toggle OptiPros project details');
+
+        cardHeader.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                toggleOptiProsCard();
+            }
+        });
+    }
+}
+
+// Add keyboard accessibility for MedLipReader card
+function initializeMedLipAccessibility() {
+    const cardHeader = document.querySelector('.medlip-card-header');
+    if (cardHeader) {
+        // Add keyboard support
+        cardHeader.setAttribute('tabindex', '0');
+        cardHeader.setAttribute('role', 'button');
+        cardHeader.setAttribute('aria-expanded', 'false');
+        cardHeader.setAttribute('aria-label', 'Toggle MedLipReader project details');
+
+        cardHeader.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                toggleMedLipCard();
+            }
+        });
+    }
+}
+
 // // Load and display projects
 // async function loadProjects() {
 //     try {
@@ -147,4 +229,6 @@ async function loadCertifications() {
 document.addEventListener('DOMContentLoaded', function() {
     loadProjects();
     loadCertifications();
+    initializeOptiProsAccessibility();
+    initializeMedLipAccessibility();
 });

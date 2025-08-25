@@ -30,6 +30,14 @@
             "github": "https://github.com/ThisIsFarhan/MCQGENERATOR-NLP",
             "demo": "http://mcqgenerator-nlp-farhan.streamlit.app/"
           }
+        },
+        {
+          "title": "Interactive Linear Regression Android Application - Kotlin",
+          "description": "Developed a Kotlin-based ML app that allows users to input custom data points and generates a real-time linear regression model with interactive graph plotting. Designed for educational use and quick ML experimentation with a clean, responsive UI.",
+          "image": "./projects/LinearRegressApp.PNG",
+          "links": {
+            "Click Here For Demo Video": "https://youtu.be/njGwgzc386g?si=BERaHVsKIEBn5puT"
+          }
         }
       ]
     },
@@ -37,7 +45,13 @@
       "name": "AI",
       "projects": [
         {
-          "title": "LangGraph RAG Worfkflow",
+          "title": "LeafyLenz - Plant Care Guide App",
+          "description": "LeafyLenz is a Flutter-based mobile app that identifies rare plants using a custom image classification model and provides LLM-powered care tips. It features Firebase backend, Gemini 1.5 Flash for recommendations, push notifications, and AdMob monetization.",
+          "image": "./projects/leafylenz.jpeg",
+          "links":{"github": "https://github.com/ThisIsFarhan/LeafyLenz-Flutter"}
+        },
+        {
+          "title": "LangGraph Agentic RAG Worfkflow",
           "description": "Developed a simple Agentic RAG application using LangGraph with Web-search capabilities using Tavili API",
           "image": "./projects/rag.jpeg",
           "links":{"github": "https://github.com/ThisIsFarhan/AgenticRag-LangGraph"}
@@ -48,6 +62,25 @@
           "image": "./projects/doc-sorter.jpeg",
           "links": {
             "github": "https://github.com/ThisIsFarhan/DocumentSorter-BERTopic"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Embedded Systems & IoT",
+      "projects": [
+        {
+          "title": "IoT Based HVAC System",
+          "description": "Developed a real-time temperature regulation system using ESP32, DHT22, and a custom PID controller to control fan and heater via PWM, with Arduino Cloud integration for live setpoint adjustment and remote monitoring.",
+          "image": "./projects/hvac.jpg",
+          "links":{"Click Here For Demo Video": "https://youtu.be/CZXyboN238I?si=PbwrWLfzNdriDc5L"}
+        },
+        {
+          "title": "Environmental Monitoring System",
+          "description": "Built an IoT-based environmental monitoring system with ESP32 (ESP-IDF), DHT22, and MQ135 to track temperature, humidity, and air quality in real time, featuring OLED display and MQTT-based mobile integration.",
+          "image": "./projects/env_monitoring.jpeg",
+          "links": {
+            "github": "https://github.com/ThisIsFarhan/Environmental-Monitoring-System-ESP-IDF"
           }
         }
       ]

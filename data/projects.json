@@ -12,6 +12,24 @@
           }
         },
         {
+          "title": "Spam Detection using Naive Bayes and Count Vectorizer",
+          "description": "Machine learning model to classify messages as spam or not spam. The model uses the Naive Bayes classifier along with the Bag Of Words (BoW) for text feature extraction.",
+          "image": "./projects/spam_classifier.png",
+          "links": {
+            "github": "https://github.com/ThisIsFarhan/SPAM-CHECKER",
+            "demo": "https://spam-checker-byfarhan.streamlit.app/"
+          }
+        },
+        {
+          "title": "Loan Approval Prediction using SVM",
+          "description": "Machine learning model using Support Vector Machine (SVM) to predict whether a loan application will be approved or not based on various features such as applicant's income, credit score, loan amount, and more.",
+          "image": "./projects/loan_prediction.png",
+          "links": {
+            "github": "https://github.com/ThisIsFarhan/Loan-Approval-Engine",
+            "demo": "https://loan-approval-engine-cotggrdjzzcudftsm9qhmb.streamlit.app/"
+          }
+        },
+        {
           "title": "Extractive Text Summarizer From Scratch",
           "description": "An Extractive Text Summarization algorithm implemented from scratch using NLP techniques. News articles are summarized by extracting key sentences that represent the main points of the text.",
           "image": "./projects/newssummarizer.png",
@@ -36,7 +54,7 @@
           "description": "Developed a Kotlin-based ML app that allows users to input custom data points and generates a real-time linear regression model with interactive graph plotting. Designed for educational use and quick ML experimentation with a clean, responsive UI.",
           "image": "./projects/LinearRegressApp.PNG",
           "links": {
-            "Click Here For Demo Video": "https://youtu.be/njGwgzc386g?si=BERaHVsKIEBn5puT"
+            "demo": "https://youtu.be/njGwgzc386g?si=BERaHVsKIEBn5puT"
           }
         }
       ]
@@ -45,16 +63,22 @@
       "name": "AI",
       "projects": [
         {
-          "title": "LeafyLenz - Plant Care Guide App",
-          "description": "LeafyLenz is a Flutter-based mobile app that identifies rare plants using a custom image classification model and provides LLM-powered care tips. It features Firebase backend, Gemini 1.5 Flash for recommendations, push notifications, and AdMob monetization.",
-          "image": "./projects/leafylenz.jpeg",
-          "links":{"github": "https://github.com/ThisIsFarhan/LeafyLenz-Flutter"}
+          "title": "Full Stack Multimodal RAG",
+          "description": "A Multimodal RAG application with role-based access control and authentication that enables users to upload PDFs and get multimodal responses of the queries",
+          "image": "https://cdn.loom.com/sessions/thumbnails/82e55933dbde4ce1b1901c0ca51a48f0-7ea095cfe1762287-full-play.gif",
+          "links":{"github": "https://github.com/ThisIsFarhan/multimodal-RAG", "demo":"https://www.loom.com/share/82e55933dbde4ce1b1901c0ca51a48f0?sid=041d8118-d000-4c11-a52b-c0d8a1ca9f6f"}
         },
         {
           "title": "LangGraph Agentic RAG Worfkflow",
           "description": "Developed a simple Agentic RAG application using LangGraph with Web-search capabilities using Tavili API",
           "image": "./projects/rag.jpeg",
           "links":{"github": "https://github.com/ThisIsFarhan/AgenticRag-LangGraph"}
+        },
+        {
+          "title": "LeafyLenz - Plant Care Guide App",
+          "description": "LeafyLenz is a Flutter-based mobile app that identifies rare plants using a custom image classification model and provides LLM-powered care tips. It features Firebase backend, Gemini 1.5 Flash for recommendations, push notifications, and AdMob monetization.",
+          "image": "./projects/leafylenz.jpeg",
+          "links":{"github": "https://github.com/ThisIsFarhan/LeafyLenz-Flutter"}
         },
         {
           "title": "Document Sorter Using BERTopic",
@@ -73,7 +97,7 @@
           "title": "IoT Based HVAC System",
           "description": "Developed a real-time temperature regulation system using ESP32, DHT22, and a custom PID controller to control fan and heater via PWM, with Arduino Cloud integration for live setpoint adjustment and remote monitoring.",
           "image": "./projects/hvac.jpg",
-          "links":{"Click Here For Demo Video": "https://youtu.be/CZXyboN238I?si=PbwrWLfzNdriDc5L"}
+          "links":{"demo": "https://youtu.be/CZXyboN238I?si=PbwrWLfzNdriDc5L"}
         },
         {
           "title": "Environmental Monitoring System",

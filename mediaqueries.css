@@ -1,230 +1,284 @@
 #desktop-nav {
-    display: flex; /* Ensure desktop nav is always visible by default */
+  display: flex;
+  /* Ensure desktop nav is always visible by default */
 }
 
 #hamburger-nav {
-    display: none; /* Hide hamburger nav by default */
+  display: none;
+  /* Hide hamburger nav by default */
 }
 
-@media screen and (max-width: 1200px){
-    #desktop-nav{
-        display: none;
-    }
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
 
-    #hamburger-nav{
-        display: flex;
-    }
+  #hamburger-nav {
+    display: flex;
+  }
 }
-
-
-
-
 
 @media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
+  #profile {
+    height: auto;
+    min-height: 83vh;
+    margin-bottom: 6rem;
   }
-  
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 2rem;
-      padding: 4rem 1rem 3rem 1rem;
-    }
-    #profile {
-      margin: 1rem;
-      padding: 2rem 1rem;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
 
-    .about-hero {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-
-    .about-intro-card,
-    .about-education-card {
-      padding: 2rem;
-    }
-
-    .expertise-highlights {
-      grid-template-columns: 1fr;
-      gap: 0.75rem;
-    }
+  .about-containers {
+    flex-wrap: wrap;
   }
-  
-  @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
 
-    /* OptiPros Small Screen Adjustments */
-    .fyp-header-content h2 {
-      font-size: 1.1rem;
-    }
-
-    .fyp-subtitle {
-      font-size: 0.9rem;
-    }
-
-    .fyp-tagline {
-      font-size: 0.85rem;
-    }
-
-    .fyp-card-header {
-      padding: 1rem;
-    }
-
-    .fyp-card-content.expanded {
-      padding: 1rem;
-    }
-
-    .fyp-content-grid {
-      gap: 1rem;
-    }
-
-    .fyp-section h4 {
-      font-size: 1rem;
-    }
-
-    .fyp-section p,
-    .fyp-section li {
-      font-size: 0.9rem;
-    }
-
-    /* Footer Mobile */
-    footer {
-        padding: 1.5rem 1rem;
-        margin-top: 2rem;
-    }
-
-    .footer-card {
-        padding: 0;
-    }
-
-    .footer-nav-links {
-        gap: 1.5rem;
-        font-size: 1rem;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-nav-links li {
-        margin: 0.25rem 0;
-    }
-
-    /* About Section Mobile */
-    .about-intro-card,
-    .about-education-card {
-        padding: 1.5rem;
-    }
-
-    .intro-header,
-    .education-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 0.5rem;
-    }
-
-    .education-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-
-    .education-details {
-        flex-direction: column;
-        text-align: center;
-        gap: 0.75rem;
-    }
-
-    .education-year {
-        align-self: center;
-    }
+  #contact,
+  #projects {
+    height: auto;
+    min-height: fit-content;
   }
-  
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  section,
+  .section-container {
+    height: auto;
+    min-height: fit-content;
+  }
+
+  section {
+    margin: 0;
+    padding: 4rem 1rem 3rem 1rem;
+  }
+
+  #profile {
+    margin: 0;
+    padding: 2rem 1rem;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-intro-card,
+  .about-education-card {
+    padding: 2rem;
+  }
+
+  .expertise-highlights {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  #contact,
+  footer {
+    height: auto;
+    min-height: fit-content;
+  }
+
+  #profile {
+    height: auto;
+    min-height: 80vh;
+    margin-bottom: 2rem;
+    padding-top: 4rem;
+  }
+
+  #about,
+  #skills,
+  #projects,
+  #certifications,
+  #contact {
+    height: auto;
+    min-height: fit-content;
+    padding: 4rem 1rem;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .contact-info-container {
+    margin: 0;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .section__pic-container {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .text-container {
+    text-align: justify;
+  }
+
+  /* OptiPros Small Screen Adjustments */
+  .fyp-header-content h2 {
+    font-size: 1.1rem;
+  }
+
+  .fyp-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .fyp-tagline {
+    font-size: 0.85rem;
+  }
+
+  .fyp-card-header {
+    padding: 1rem;
+  }
+
+  .fyp-card-content.expanded {
+    padding: 1rem;
+  }
+
+  .fyp-content-grid {
+    gap: 1rem;
+  }
+
+  .fyp-section h4 {
+    font-size: 1rem;
+  }
+
+  .fyp-section p,
+  .fyp-section li {
+    font-size: 0.9rem;
+  }
+
+  /* Footer Mobile */
+  footer {
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+  }
+
+  .footer-card {
+    padding: 0;
+  }
+
+  .footer-nav-links {
+    gap: 1.5rem;
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-nav-links li {
+    margin: 0.25rem 0;
+  }
+
+  /* About Section Mobile */
+  .about-intro-card,
+  .about-education-card {
+    padding: 1.5rem;
+  }
+
+  .intro-header,
+  .education-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .education-details {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .education-year {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #hamburger-nav {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  #hamburger-nav .hamburger-menu {
+    display: none !important;
+  }
+
+  .footer-nav-links,
+  .footer-card nav {
+    display: none !important;
+  }
+}
